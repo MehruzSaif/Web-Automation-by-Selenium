@@ -4,7 +4,8 @@ import org.testng.annotations.Test;
 
 public class GoogleTesting extends BaseDriver {
 
-    public String baseUrl = "https://www.gloriousgaming.com/";
+    // public String baseUrl = "https://www.gloriousgaming.com/";
+    public String baseUrl = "https://iqunix.store/";
 
     @Test
     public void googleTest() throws InterruptedException {
