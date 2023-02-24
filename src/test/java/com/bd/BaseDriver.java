@@ -27,7 +27,7 @@ public class BaseDriver {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         }
-    }
+    } 
 
     @AfterSuite
     public void close() {

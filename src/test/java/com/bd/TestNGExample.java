@@ -1,8 +1,9 @@
 package com.bd;
 
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
-public class TestNGExample extends BaseDriver{
+public class TestNGExample {
 
     // Before Suite
 	
@@ -11,5 +12,13 @@ public class TestNGExample extends BaseDriver{
         System.out.println("Before Suite Example");
     }
     
-    public void
+    @Test
+    public void test() {
+    	System.out.println("Test..........1");
+    }
+    
+    @Test
+    public void afterSuiteExample() {
+    	System.out.println("After Suite Example");
+    }
 }
