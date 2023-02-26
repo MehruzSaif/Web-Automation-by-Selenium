@@ -35,11 +35,13 @@ public class LocatorIdentify extends BaseDriver {
 		 */
 		WebElement email = driver.findElement(By.name("username"));
 		email.sendKeys("extremearnob007@yahoo.com");
-		
+
 		WebElement nextButton = driver.findElement(By.id("login-signin"));
 		nextButton.click();
 
 		Thread.sleep(5000);
+
+		// Xpath: //TagName[@attribut='value']
 	}
 
 }
