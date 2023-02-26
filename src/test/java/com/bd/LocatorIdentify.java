@@ -25,8 +25,17 @@ public class LocatorIdentify extends BaseDriver {
 		/*
 		 * Class
 		 */
-		WebElement email = driver.findElement(By.className("phone-no"));
+		/*
+		 * WebElement email = driver.findElement(By.className("phone-no"));
+		 * email.sendKeys("abc@yahoo.com");
+		 */
+
+		/*
+		 * Name
+		 */
+		WebElement email = driver.findElement(By.name("username"));
 		email.sendKeys("abc@yahoo.com");
+
 		Thread.sleep(5000);
 	}
 
