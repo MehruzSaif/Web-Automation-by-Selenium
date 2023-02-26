@@ -12,13 +12,22 @@ public class LocatorIdentify extends BaseDriver {
 	public void testLocator() throws InterruptedException {
 		driver.get(url);
 		driver.manage().window().maximize();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 
 		/*
 		 * ID
 		 */
-		WebElement email = driver.findElement(By.id("login-username"));
+		/*
+		 * WebElement email = driver.findElement(By.id("login-username"));
+		 * email.sendKeys("abc@yahoo.com");
+		 */
+
+		/*
+		 * Class
+		 */
+		WebElement email = driver.findElement(By.className("phone-no"));
 		email.sendKeys("abc@yahoo.com");
+		Thread.sleep(5000);
 	}
 
 }
