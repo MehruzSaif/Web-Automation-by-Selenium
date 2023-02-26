@@ -12,7 +12,7 @@ public class LocatorIdentify extends BaseDriver {
 	public void testLocator() throws InterruptedException {
 		driver.get(url);
 		driver.manage().window().maximize();
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 
 		/*
 		 * ID
@@ -34,7 +34,10 @@ public class LocatorIdentify extends BaseDriver {
 		 * Name
 		 */
 		WebElement email = driver.findElement(By.name("username"));
-		email.sendKeys("abc@yahoo.com");
+		email.sendKeys("extremearnob007@yahoo.com");
+		
+		WebElement nextButton = driver.findElement(By.id("login-signin"));
+		nextButton.click();
 
 		Thread.sleep(5000);
 	}
