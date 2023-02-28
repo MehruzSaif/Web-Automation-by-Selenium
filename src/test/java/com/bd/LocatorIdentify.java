@@ -44,8 +44,13 @@ public class LocatorIdentify extends BaseDriver {
 
 		// Xpath: //TagName[@attribute='value']
 
-		WebElement signUp = driver.findElement(By.xpath("//a[contains(text(),'Signup / Login')]"));
-		signUp.click();
+		// WebElement signUp = driver.findElement(By.xpath("//a[contains(text(),'Signup
+		// / Login')]"));
+		// signUp.click();
+
+		// contains method
+		WebElement sellOnDaraz = driver.findElement(By.xpath("//div[@id='J_LzdSiteNav']/div/div[1]/div/div/div[1]/div/div[3]/a"));
+		sellOnDaraz.click();
 
 		Thread.sleep(5000);
 	}
