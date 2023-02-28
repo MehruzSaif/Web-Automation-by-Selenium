@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 01 04:12:13 BDT 2023</td>
+<td>Started on:</td><td>Wed Mar 01 04:47:10 BDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7945 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38311 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,14 +77,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.bd.AssertionExample.assertionTest()'><b>assertionTest</b><br>Test class: com.bd.AssertionExample</td>
-<td><div><pre>java.lang.AssertionError: expected [nline Shopping in Bangladesh: Order Now from Daraz.com.bd] but found [Online Shopping in Bangladesh: Order Now from Daraz.com.bd]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.bd.AssertionExample.assertionTest(AssertionExample.java:24)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	expected [nline Shopping in Bangladesh: Order Now from Daraz.com.bd] but found [Online Shopping in Bangladesh: Order Now from Daraz.com.bd]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.bd.AssertionExample.assertionTest(AssertionExample.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -113,15 +110,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace556662073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace556662073'><pre>java.lang.AssertionError: expected [nline Shopping in Bangladesh: Order Now from Daraz.com.bd] but found [Online Shopping in Bangladesh: Order Now from Daraz.com.bd]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at com.bd.AssertionExample.assertionTest(AssertionExample.java:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace566760932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace566760932'><pre>java.lang.AssertionError: The following asserts failed:
+	expected [nline Shopping in Bangladesh: Order Now from Daraz.com.bd] but found [Online Shopping in Bangladesh: Order Now from Daraz.com.bd]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at com.bd.AssertionExample.assertionTest(AssertionExample.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,7 +145,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>7</td>
+<td>38</td>
 <td>com.bd.AssertionExample@6892b3b6</td></tr>
 </table><p>
 </body>

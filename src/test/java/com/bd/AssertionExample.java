@@ -13,9 +13,9 @@ public class AssertionExample extends BaseDriver {
 	public void assertionTest() throws InterruptedException {
 		driver.get(daraz);
 		driver.manage().window().maximize();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
-		String expectedTitle = "Online Shopping in Bangladesh: Order Now from Daraz.com.bd";
+		String expectedTitle = "nline Shopping in Bangladesh: Order Now from Daraz.com.bd";
 		String actualTitle = driver.getTitle();
 
 		/*
@@ -31,9 +31,10 @@ public class AssertionExample extends BaseDriver {
 		SoftAssert soft = new SoftAssert();
 		soft.assertEquals(actualTitle, expectedTitle);
 
-		WebElement sellOnDaraz = driver
-				.findElement(By.xpath("//div[@id='J_LzdSiteNav']/div/div[1]/div/div/div[1]/div/div[3]/a"));
+		WebElement sellOnDaraz = driver.findElement(By.xpath("//div[@id='J_LzdSiteNav']/div/div[1]/div/div/div[1]/div/div[3]/a"));
 		sellOnDaraz.click();
 		Thread.sleep(5000);
+		
+		soft.assertAll();
 	}
 }
