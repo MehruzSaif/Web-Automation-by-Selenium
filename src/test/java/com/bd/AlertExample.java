@@ -43,8 +43,6 @@ public class AlertExample extends BaseDriver {
         Thread.sleep(2000);
         driver.switchTo().alert().accept();
 
-        Thread.sleep(3000);
-
         /* For JS Prompt Result */
         String expectedResult = "Automation Testing";
         String actualResult = driver.getTitle();
