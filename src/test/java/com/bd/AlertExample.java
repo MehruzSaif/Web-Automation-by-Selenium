@@ -29,7 +29,7 @@ public class AlertExample extends BaseDriver {
         SoftAssert soft1 = new SoftAssert();
         soft1.assertEquals(actualAlert, expectedAlert);
 
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         /* For JS Confirm */
         jsConfirm.click();
