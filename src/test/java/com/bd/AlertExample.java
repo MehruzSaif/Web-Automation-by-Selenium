@@ -19,11 +19,11 @@ public class AlertExample extends BaseDriver {
         WebElement jsConfirm = driver.findElement(By.xpath("//button[contains(text(),'Click for JS Confirm')]"));
         WebElement jsPrompt = driver.findElement(By.xpath("//button[contains(text(),'Click for JS Prompt')]"));
 
+        /* For JS Alert */
         jsAlert.click();
         Thread.sleep(2000);
         driver.switchTo().alert().accept();
 
-        /* For JS Prompt Alert */
         String expectedAlert = "You successfully clicked an alert";
         String actualAlert = driver.getTitle();
         SoftAssert soft1 = new SoftAssert();
@@ -31,24 +31,27 @@ public class AlertExample extends BaseDriver {
 
         Thread.sleep(3000);
 
+        /* For JS Confirm */
         jsConfirm.click();
         Thread.sleep(2000);
         driver.switchTo().alert().dismiss();
 
         Thread.sleep(3000);
 
+        /* For JS Prompt Result */
         jsPrompt.click();
         Thread.sleep(2000);
         driver.switchTo().alert().sendKeys("Automation Testing");
         Thread.sleep(2000);
         driver.switchTo().alert().accept();
 
-        /* For JS Prompt Result */
         String expectedResult = "Automation Testing";
         String actualResult = driver.getTitle();
         SoftAssert soft3 = new SoftAssert();
         soft3.assertEquals(actualResult, expectedResult);
 
         Thread.sleep(5000);
+
+        soft.assertAll();
     }
 }
