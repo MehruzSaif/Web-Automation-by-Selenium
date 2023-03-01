@@ -41,17 +41,18 @@ public class AlertExample extends BaseDriver {
         /* For JS Prompt Result */
         jsPrompt.click();
         Thread.sleep(2000);
-        driver.switchTo().alert().sendKeys("Automation Testing");
+        driver.switchTo().alert().sendKeys("You entered: Automation Testing");
         Thread.sleep(2000);
         driver.switchTo().alert().accept();
 
-        String expectedResult = "Automation Testing";
+        String expectedResult = "You entered: Automation Testing";
         String actualResult = driver.getTitle();
         SoftAssert soft3 = new SoftAssert();
         soft3.assertEquals(actualResult, expectedResult);
 
         Thread.sleep(5000);
 
-        soft.assertAll();
+        soft1.assertAll();
+        soft3.assertAll();
     }
 }

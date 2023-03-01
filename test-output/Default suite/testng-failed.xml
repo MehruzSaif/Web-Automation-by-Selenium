@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bd.HoverExample">
+      <class name="com.bd.AlertExample">
         <methods>
           <include name="start"/>
-          <include name="assertionTest"/>
           <include name="close"/>
+          <include name="alertTest"/>
         </methods>
-      </class> <!-- com.bd.HoverExample -->
+      </class> <!-- com.bd.AlertExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
