@@ -15,7 +15,7 @@ public class AssertionExample extends BaseDriver {
 		driver.manage().window().maximize();
 		Thread.sleep(5000);
 
-		String expectedTitle = "nline Shopping in Bangladesh: Order Now from Daraz.com.bd";
+		String expectedTitle = "Online Shopping in Bangladesh: Order Now from Daraz.com.bd";
 		String actualTitle = driver.getTitle();
 
 		/*
@@ -34,7 +34,7 @@ public class AssertionExample extends BaseDriver {
 		WebElement sellOnDaraz = driver.findElement(By.xpath("//div[@id='J_LzdSiteNav']/div/div[1]/div/div/div[1]/div/div[3]/a"));
 		sellOnDaraz.click();
 		Thread.sleep(5000);
-		
+
 		soft.assertAll();
 	}
 }
