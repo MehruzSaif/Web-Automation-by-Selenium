@@ -3,6 +3,7 @@ package com.bd;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 public class AlertExample extends BaseDriver {
 
@@ -22,11 +23,33 @@ public class AlertExample extends BaseDriver {
         Thread.sleep(2000);
         driver.switchTo().alert().accept();
 
+        /* For JS Prompt Alert */
+        String expectedAlert = "You successfully clicked an alert";
+        String actualAlert = driver.getTitle();
+        SoftAssert soft1 = new SoftAssert();
+        soft1.assertEquals(actualAlert, expectedAlert);
+
         Thread.sleep(3000);
 
         jsConfirm.click();
         Thread.sleep(2000);
         driver.switchTo().alert().dismiss();
+
+        Thread.sleep(3000);
+
+        jsPrompt.click();
+        Thread.sleep(2000);
+        driver.switchTo().alert().sendKeys("Automation Testing");
+        Thread.sleep(2000);
+        driver.switchTo().alert().accept();
+
+        Thread.sleep(3000);
+
+        /* For JS Prompt Result */
+        String expectedResult = "Automation Testing";
+        String actualResult = driver.getTitle();
+        SoftAssert soft3 = new SoftAssert();
+        soft3.assertEquals(actualResult, expectedResult);
 
         Thread.sleep(5000);
     }
