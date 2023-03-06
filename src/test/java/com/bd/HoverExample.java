@@ -26,6 +26,6 @@ public class HoverExample extends BaseDriver {
 		WebElement realmePhone = driver.findElement(By.xpath("//span[contains(text(),'realme Phones')]"));
 		realmePhone.click();
 
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 }
