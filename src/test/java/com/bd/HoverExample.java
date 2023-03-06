@@ -16,6 +16,7 @@ public class HoverExample extends BaseDriver {
 
 		Actions action = new Actions(driver);
 
+		//For Hover => action.moveToElement().perform()
 		WebElement electronic = driver.findElement(By.xpath("//span[contains(text(),'Electronic Devices')]"));
 		action.moveToElement(electronic).perform();
 
@@ -25,6 +26,6 @@ public class HoverExample extends BaseDriver {
 		WebElement realmePhone = driver.findElement(By.xpath("//span[contains(text(),'realme Phones')]"));
 		realmePhone.click();
 
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 	}
 }
